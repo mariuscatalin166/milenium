@@ -2,7 +2,7 @@
 @import "../css/default/fonts";
 @import "../css/icons/font";
 @import "../css/default/colors";
-@import "../css/default/animation";
+@import "../css/default/animate";
 
 @import "../css/components/header-menu";
 @import "../css/components/menu";
@@ -10,30 +10,9 @@
 
 @import "../css/default/common-media";
 
-// NEEDED STYLES
-.divider {
-  display: block;
-  width: 50px;
-  height: 5px;
-  background: $gold;
-  margin: 10px 0px;
-}
-.button {
-  border: 2px solid $white;
-  padding: 15px 30px;
-  background: 0;
-  outline: 0;
-  color: $white;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 500;
-  font-family: "Raleway";
-  transition: transform 0.2s ease;
-}
 .navheader {
   background: $black;
 }
-
 // MAIN
 .main {
   max-width: 1200px;

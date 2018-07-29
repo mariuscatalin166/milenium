@@ -37,6 +37,10 @@
   <meta name="theme-color" content="#FFB200">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="css/tuburi.min.css" type="text/css">
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <title>Hale Metalice | Despre</title>
 </head>
 <body>
@@ -83,7 +87,7 @@
       <div class="menu__element active-link"><a href="/tuburi.html" >Tuburi</a></div>
     </div>  
   <div class="main">
-    <div class="main-wrapper">
+    <div class="main-wrapper wow fadeIn" data-wow-delay="0.3s">
       <div class="left">
         <div class="main-text">
           <h2 class="main-subtitle">Cracteristici</h2>
@@ -96,8 +100,8 @@
         <img src="assets/img/tuburi.jpg" alt="" class="main-img">
       </div>
     </div>
-    <div class="usesanddimensions" id="readmore">
-      <div class="uses">
+    <div class="usesanddimensions wow fadeIn" id="readmore">
+      <div class="uses wow slideInLeft" data-wow-delay="0.45s">
         <h1 class="main-title smaller">Utilizarile recomandate</h1>
         <div class="uses-wrapper">
           <p class="uses-description">Aductiuni si retele de distributie sub presiune pentru alimentari cu apa potabila, industriala si irigatii</p>
@@ -105,7 +109,7 @@
           <p class="uses-description"> Subtraversari de cai ferate drumuri si rauri</p>
         </div>
       </div>
-      <div class="dimensions">
+      <div class="dimensions wow slideInRight" data-wow-delay="0.45s">
         <h1 class="main-title smaller">Dimensiuni disponibile (dimatreu x grosime)</h1>
         <div class="dimensions-wrapper">
           <div class="tags">
@@ -128,7 +132,7 @@
         </div>
       </div>
     </div>
-    <div class="more-info">
+    <div class="more-info wow fadeIn" data-wow-delay="0.3s">
       <h1 class="main-title">De asemenea...</h1>
       <div class="more-info-wrapper">
         <p class="more-info-description">Tuburile si elementele de canalizare sunt rigide, isi <strong>pastreaza forma in timpul incarcarii, transportului, instalarii si exploatarii</strong>. Nu necesita lucrari suplimentare de protectie pentru a suporta sarcinile din mediul exterior, cum ar fi trafic etc. Tuburile si elementele de canalizare sunt recomandate pentru transportul oricarui tip de reziduuri menajere, chiar si atunci cand ph-ul reziduurilor scade sub 4.5.</p>
@@ -140,7 +144,7 @@
   <div class="grid">
     <h1 class="main-title">Avantaje deosebite</h1>
     <div class="grid-wrapper">
-      <div class="box">
+      <div class="box wow fadeIn" data-wow-delay="0.3s">
         <figure class="box-figure">
           <img src="assets/img/icons/wallet.png" alt="" class="box-image">
         </figure>
@@ -149,7 +153,7 @@
           <p class="box-description">Lungimile mari de fabricatie (5m la varianta Premo si 6m la varianta Sentab) asigura economia montajului si reducerea timpilor de executie. Durata de exploatare este foarte mare (peste 80 de ani )si sistemul de canalizare nu necesita intretineri suplimentare conexe. Tuburile au un pret de cost redus fata de alte produse similare (PVC sau Fibra de sticla).</p>
         </div>
       </div>
-      <div class="box">
+      <div class="box wow fadeIn" data-wow-delay="0.4s">
         <figure class="box-figure">
           <img src="assets/img/icons/repair-garage.png" alt="" class="box-image">
         </figure>
@@ -158,7 +162,7 @@
           <p class="box-description">Tuburile din beton precomprimat avand un sistem de armare superior isi pastreaza stabilitatea dimensionala fiind rigide si nu necesita lucrari suplimentare de protectie pentru a rezista la solicitarile exterioare si interioare (pot fi utilizate la lucrari de infrastructura, tanvesari si podete).</p>
         </div>
       </div>
-      <div class="box">
+      <div class="box wow fadeIn" data-wow-delay="0.5s">
         <figure class="box-figure">
           <img src="assets/img/icons/water-resistant.png" alt="" class="box-image">
         </figure>
@@ -167,7 +171,7 @@
           <p class="box-description">Tuburile din beton fiind realizate dintr-un beton superior sunt rezistente la solventi, uleiuri minerale si agenti de curatire. De asemenea, au rezistenta deosebitala actiunea agentilor abrazivi. Nu sunt afectate de nivelul panzei freatice chiar si pentru un sol cu Ph marit.</p>
         </div>
       </div>
-      <div class="box">
+      <div class="box wow fadeIn" data-wow-delay="0.6s">
         <figure class="box-figure">
           <img src="assets/img/icons/green-earth.png" alt="" class="box-image">
         </figure>
@@ -176,7 +180,7 @@
           <p class="box-description">Produsele si materialele utilizate la realizarea tuburilor precomprimate sunt naturale ulterior pot fi reciclate. Sistemul cu cep si mufa si garnitura de cauciuc asigura o etanseitate sporita ne fiind afectat mediul inconjurator.</p>
         </div>
       </div>
-      <div class="box">
+      <div class="box wow fadeIn" data-wow-delay="0.7s">
         <figure class="box-figure">
           <img src="assets/img/icons/shield.png" alt="" class="box-image">
         </figure>
@@ -193,13 +197,12 @@
       <a href="/contact.html"><button class="btn btn-white">Contacteaza-ne</button></a>
     </div>
   </div>
-  <footer class="main__footer">
+  <footer class="main__footer wow fadeIn">
   <div class="right">
       <div class="right-text">
         <div class="footer__info">Lasa-ne o parere!</div>
-        <span class="divider"></span>
       </div>
-      <form action="">
+      <form name="feedback" netlify>
         <input id="footer-name-input" type="text" placeholder="Numele tau" name="nume">
         <input id="footer-email-input" type="email" placeholder="Adresa ta de email" name="email">
         <textarea id="footer-textarea" name="descriere" cols="40" rows="6" placeholder="Parerea ta aici"></textarea>
@@ -210,13 +213,11 @@
       <img class="footer__logo" src="assets/img/logo.png">
       <div class="footer-text">
         <div class="footer__info">Toate produsele noastre au testarile si autorizatiile necesare pentru cele mai exigente standarde in constructii.</div>
-        <span class="divider"></span>
+        <span class="divider divider-gold divider-margin"></span>
       </div>
       <div class="footer__socials">
-        <img src="assets/img/socialicons/fb.png" alt="">
-        <img src="assets/img/socialicons/insta.png" alt="">
-        <img src="assets/img/socialicons/twitter.png" alt="">
-        <img src="assets/img/socialicons/whatsapp.png" alt="">
+        <a href="https://www.facebook.com/hale.metal1/" target="_blank"><img src="assets/img/socialicons/fb.png" alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=40752805775&text=Va%20contactez%20in%20legatura%20cu%20Milenium%20Metcons!" target="_blank"><img src="assets/img/socialicons/whatsapp.png" alt=""></a>
       </div>
     </div>
   </footer>

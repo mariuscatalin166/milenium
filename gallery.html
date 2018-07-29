@@ -37,6 +37,10 @@
   <meta name="theme-color" content="#FFB200">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="css/gallery.min.css" type="text/css">
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <title>Hale Metalice | Despre</title>
 </head>
 <body>
@@ -82,25 +86,25 @@
       <div class="menu__element"><a href="/teava.html" >Teava</a></div>
       <div class="menu__element"><a href="/tuburi.html" >Tuburi</a></div>
     </div>
-  <div class="main">
-    <div class="main-text">
+  <div class="main" data-wow-delay="0.3s">
+    <div class="main-text wow slideInDown" data-wow-delay="0.5s">
       <h1 class="main-title">Galeria nostra</h1>
       <p class="main-description">Sunteti interesat sa stiti mai multe despre noi? Mai jos puteti vedea cateva fotografii reprezentative.</p>
     </div>
     <div class="row">
       <div class="column">
-        <img src="assets/img/gallery/img16.jpg" alt="">
-        <img src="assets/img/gallery/img23.jpg" alt="">
-        <img src="assets/img/gallery/img17.jpg" alt="">
+        <img src="assets/img/gallery/img16.jpg" alt="" class="wow fadeIn" data-wow-delay="0.1s">
+        <img src="assets/img/gallery/img23.jpg" alt="" class="wow fadeIn" data-wow-delay="0.18s">
+        <img src="assets/img/gallery/img26.jpg" alt="" class="wow fadeIn" data-wow-delay="0.28s">
       </div>
       <div class="column">
-        <img src="assets/img/gallery/img21.jpg" alt="">
-        <img src="assets/img/gallery/img22.jpg" alt="">
-        <img src="assets/img/gallery/img23.jpg" alt="">
+        <img src="assets/img/gallery/img21.jpg" alt="" class="wow fadeIn" data-wow-delay="0.38s">
+        <img src="assets/img/gallery/img17.jpg" alt="" class="wow fadeIn" data-wow-delay="0.48s">
+        <img src="assets/img/gallery/img23.jpg" alt="" class="wow fadeIn" data-wow-delay="0.58s">
       </div>
       <div class="column">
-        <img src="assets/img/gallery/img15.jpg" alt="">
-        <img src="assets/img/gallery/img27.jpg" alt="">
+        <img src="assets/img/gallery/img15.jpg" alt="" class="wow fadeIn" data-wow-delay="0.68s">
+        <img src="assets/img/gallery/img27.jpg" alt="" class="wow fadeIn" data-wow-delay="0.78s">
       </div>
     </div>
   </div>
@@ -114,28 +118,24 @@
   <div class="right">
       <div class="right-text">
         <div class="footer__info">Lasa-ne o parere!</div>
-        <span class="divider"></span>
       </div>
-      <form action="">
+      <form name="feedback" netlify>
         <input id="footer-name-input" type="text" placeholder="Numele tau" name="nume">
         <input id="footer-email-input" type="email" placeholder="Adresa ta de email" name="email">
         <textarea id="footer-textarea" name="descriere" cols="40" rows="6" placeholder="Parerea ta aici"></textarea>
-        <button class="button">Trimite</button>
+        <button class="btn btn-white">Trimite</button>
       </form>
     </div>
     <div class="left">
       <img class="footer__logo" src="assets/img/logo.png">
       <div class="footer-text">
         <div class="footer__info">Toate produsele noastre au testarile si autorizatiile necesare pentru cele mai exigente standarde in constructii.</div>
-        <span class="divider"></span>
+        <span class="divider divider-gold divider-margin"></span>
       </div>
       <div class="footer__socials">
-        <img src="assets/img/socialicons/fb.png" alt="">
-        <img src="assets/img/socialicons/insta.png" alt="">
-        <img src="assets/img/socialicons/twitter.png" alt="">
-        <img src="assets/img/socialicons/whatsapp.png" alt="">
+        <a href="https://www.facebook.com/hale.metal1/" target="_blank"><img src="assets/img/socialicons/fb.png" alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=40752805775&text=Va%20contactez%20in%20legatura%20cu%20Milenium%20Metcons!" target="_blank"><img src="assets/img/socialicons/whatsapp.png" alt=""></a>
       </div>
-    </div>
   </footer>
   <script src="js/menu-burger.js"></script>
   <script src="js/gallery.js"></script>
