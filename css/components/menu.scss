@@ -1,0 +1,31 @@
+.menu {
+  display: none;
+  padding: 20px;
+  position: absolute;
+  background: $black;
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.4s;
+  left: 0; right: 0;
+}
+.menu__element {
+  text-align: center;
+  width: 100%;
+  padding: 12px 50px;
+  text-transform: capitalize;
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: "Poppins";
+  }
+}
+.menu-trans {
+  opacity: 1;
+  transition: opacity 0.4s;
+  max-height: 100vh;
+}
+.menu_active {
+  display: block;
+}

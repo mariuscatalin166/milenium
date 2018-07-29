@@ -1,0 +1,124 @@
+@import "../css/default/reset";
+@import "../css/default/fonts";
+@import "../css/icons/font";
+@import "../css/default/colors";
+@import "../css/default/animation";
+
+@import "../css/components/header-menu";
+@import "../css/components/menu";
+@import "../css/components/footer";
+
+@import "../css/default/common-media";
+
+// NEEDED STYLES
+* {
+  box-sizing: border-box;
+}
+.divider {
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: $gold;
+  margin: 10px 0px;
+}
+.button {
+  border: 2px solid $white;
+  padding: 15px 30px;
+  background: 0;
+  outline: 0;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Raleway";
+  transition: transform 0.2s ease;
+}
+.navheader {
+  background: $black;
+}
+
+// MAIN
+.main {
+  width: 100%;
+  padding: 100px 0;
+  font-family: Lato, sans-serif;
+  text-align: center;
+}
+.main-title {
+  display: inline-block;
+  font-family: Poppins, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 15px;
+  border-bottom: 4px solid $gold;
+  margin-bottom: 30px;
+}
+.main-description {
+  color: $gray5;
+  max-width: 500px;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 30px;
+  margin: 0 auto 50px auto;
+}
+.row {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+.column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+  img {
+    vertical-align: middle;
+    width: 100%;
+    margin: 4px 0;
+  }
+}
+.info {
+  width: 100%;
+  padding: 35px 25px;
+  background: $gold;
+}
+.info-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: $white;
+  text-align: center;
+}
+.info-title {
+  font-family: Poppins, sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 750px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .column {
+    flex: 33.3;
+    max-width: 33.3%;
+  }
+  .info {
+    padding: 50px;
+  }
+  .info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info-title {
+    margin: 0;
+  }
+  .main-title {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,97 @@
+// NAVIGATION HEADER
+.navheader {
+  padding: 50px 30px 10px 30px;
+  opacity: 0;
+  position: relative;
+  transition: background 1s ease-out;
+}
+//BLACK BACKGROND
+.black-background {
+  background: $black;
+}
+// WARPPER IN NAVIGATION
+.inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+// NAVIGATION NAV LOGO
+.navheader__logo {
+  width: 100px;
+}
+// ICONS IN NAVBAR
+.navheader-icon {
+  color: $white;
+  font-size: 30px;
+  padding: 5px 10px;
+}
+// BURGER MENu
+.burger {
+  width: 25px; 
+  height: 20px;
+  margin: 3px;
+  display: inline-block;
+  position: relative;
+  span {
+    display: block;
+    position: absolute;
+    background: $white;
+    height: 1.8px;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+  span:nth-of-type(1) {
+    top: 0px;
+  }
+  span:nth-of-type(2) {
+    top: 8px;
+  }
+  span:nth-of-type(3) {
+    top: 16px;
+  }
+}
+// ACITVE BURGER
+.active {
+  span {
+    top: 10px !important;
+    transition: all 0.2s ease-out;
+  }
+  span:nth-of-type(1) {
+    transform: rotate(45deg);
+  }
+  span:nth-of-type(2) {
+    opacity: 0;
+  }
+  span:nth-of-type(3) {
+    transform: rotate(135deg);
+  }
+}
+.right {
+  display: flex;
+  align-items: center;
+}
+.navbar-links {
+  display: block;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: $white;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 8px 0;
+    transition: all 0.3s ease-out;
+    border-bottom: 2px solid rgba($dark_gold, 0);
+    &:hover {
+      border-bottom: 2px solid rgba($dark_gold, 1);
+      transition: all 0.3s ease;
+    }
+  }
+}
+.active-link {
+  border-bottom: 2px solid rgba($dark_gold, 1) !important; 
+}

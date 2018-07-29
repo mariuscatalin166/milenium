@@ -1,0 +1,40 @@
+// MAIN BACKGROUND
+.main {
+  width: 100%;
+  background: radial-gradient(rgba($dark_gold, 0.1), rgba(#262626, 1)), url("http://www.gainesvilleconnect.com/images/header-patterns/header-pattern-03.png"), url(../assets/img/gallery/img16.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.main__box {
+  display: block;
+  // height: calc(100vh - 160px);
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px 140px 40px;
+}
+.main__content-subtitle {
+  font-family: "Raleway";
+  font-size: 12px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.main__content-title {
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.main__content-paragraph {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 26px;
+  margin-bottom: 18px;
+}

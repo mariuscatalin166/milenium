@@ -1,0 +1,64 @@
+@media screen and (min-width: 1024px) {
+  .navbar-links {
+    display: block;
+  }
+  .burger {
+    display: none;
+  }
+  .inner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main__footer {
+    flex-direction: column;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
+//BUTTON
+.btn {
+  padding: 15px 30px;
+  background: 0;
+  outline: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Raleway";
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: translateY(10px);
+    transition: transform 0.2s ease;
+  }
+}
+.btn-white {
+  border: 2px solid $white;
+  color: $white;
+}
+.btn-gold {
+  border: 2px solid $gold;
+  color: $gold;
+}
+.btn-black {
+  border: 2px solid $black;
+  color: $black;
+}
+//DIVIDER
+.divider {
+  display: block;
+  width: 50px;
+  height: 5px;
+}
+.divider-gold {
+  background: $gold;
+}
+.divider-black {
+  background: $black;
+}
+.divider-margin {
+  margin: 20px 0;
+}

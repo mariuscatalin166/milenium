@@ -1,0 +1,157 @@
+@import "../css/default/reset";
+@import "../css/default/fonts";
+@import "../css/icons/font";
+@import "../css/default/colors";
+@import "../css/default/animation";
+
+@import "../css/components/header-menu";
+@import "../css/components/menu";
+@import "../css/components/footer";
+
+@import "../css/default/common-media";
+
+// NEEDED STYLES
+.divider {
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: $gold;
+  margin: 10px 0px;
+}
+.button {
+  border: 2px solid $white;
+  padding: 15px 30px;
+  background: 0;
+  outline: 0;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: "Raleway";
+  transition: transform 0.2s ease;
+}
+.navheader {
+  background: $black;
+}
+
+// MAIN
+.main {
+  max-width: 1200px;
+  padding: 50px 30px;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+}
+.main-section {
+  margin-bottom: 30px;
+}
+.main-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  padding: 25px 0 10px 0;
+}
+.main-description {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+.main-image {
+  width: 100%;
+}
+//OFFERS
+.offers-wrapper {
+  text-align: center;
+}
+.offers-title {
+  font-family: Poppins, sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+.offers-box {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  font-family: Lato, sans-serif;
+  box-shadow: 0 4px 14px rgba(61, 65, 84, 0.15);
+  color: $gray5;
+  line-height: 26px;
+  font-size: 14px;
+  max-width: 350px;
+  // text-align: center;
+  img {
+    margin: 15px;
+    max-width: 50px;
+  }
+}
+// TESTIMONIALS 
+.testimonials {
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  background: url("https://preview.ibb.co/gAEATd/overlaytesti4.png"), linear-gradient(135deg, $light_gold, $dark_gold);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-wrapper {
+  max-width: 650px;
+  text-align: center;
+  color: $white;
+  padding: 0 30px;
+}
+.testimonials-text {
+  font-family: Lato, sans-serif;
+  margin-bottom: 50px;
+}
+.testimonials-title {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 50px;
+}
+.testimonials-description {
+  font-weight: 300;
+  font-size: 15.5px;
+  line-height: 20px;
+}
+.testimonials-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  text-align: left;
+  box-shadow: 6px 6px 15px rgba($black, 0.1);
+}
+.testimonials-box-text {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.testimonials-box-img {
+  margin: 25px 0;
+  width: 120px;
+}
+.testimonials-box-author {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+@media screen and (min-width: 750px) {
+  .main-section {
+    display: flex;
+    align-items: center;
+  }
+  .main-text {
+  padding: 0 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-image {
+    width: 500px;
+  }
+  .changeOrder {
+    order: -1;
+  }
+}
