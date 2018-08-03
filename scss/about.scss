@@ -80,6 +80,32 @@
   color: $white;
   padding: 0 30px;
 }
+.testimonials-list {
+  position: relative;
+  max-height: 700px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    width: 0px;
+  }
+  &::-moz-scrollbar{
+    width: 0px;
+  }
+  &::-ms-scrollbar{
+    width: 0px;
+  }
+  &::-o-scrollbar{
+    width: 0px;
+  }
+}
+.down-arrow {
+  visibility: hidden;
+  position: absolute;
+  width: 35px;
+  opacity: 0.6;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .testimonials-text {
   font-family: Lato, sans-serif;
   margin-bottom: 50px;
@@ -106,6 +132,9 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 25px;
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 .testimonials-box-img {
   margin: 25px 0;
@@ -114,6 +143,7 @@
 .testimonials-box-author {
   font-size: 18px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 

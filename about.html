@@ -174,34 +174,17 @@
         </div>
       </div>   
    </div>
-   <!-- <div class="testimonials">
+   <div class="testimonials">
      <div class="testimonials-wrapper">
        <div class="testimonials-text">
-         <h2 class="testimonials-title">Our users love this app?</h2>
-         <p class="testimonials-description">Our users are impatient. They're probably distracted too. Keep it simple and beautiful, fun and functional. Clean aesthetics supported by a strong concept is what we stand for.</p>
+         <h2 class="testimonials-title">Testiomoniale</h2>
+         <p class="testimonials-description">Mai jos poti vedea cateva pareri despre noi. Sau nu stiu ce pun aici</p>
        </div>
        <div class="testimonials-list">
-         <div class="testimonials-box">
-           <p class="testimonials-box-text">Sed bibendum tortor porttitor turpis euismod, vitae sodales turpis maximus. Sed a lorem tortor. Nam rutrum lorem at eleifend sodales. Duis nisi dolor, eleifend ut magna vel, rhoncus congue ante. 
-            </p>
-           <img src="assets/img/starsdark.png" alt="" class="testimonials-box-img">
-           <p class="testimonials-box-author">Bob Vegan</p>
-         </div>
-         <div class="testimonials-box">
-          <p class="testimonials-box-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in vestibulum neque, sit amet gravida nunc. Quisque at diam in urna malesuada aliquet id at ante. 
-          </p>
-          <img src="assets/img/starsdark.png" alt="" class="testimonials-box-img">
-          <p class="testimonials-box-author">Violeta Ross</p>
-        </div>
-        <div class="testimonials-box">
-          <p class="testimonials-box-text">Sed vitae tellus cursus, consequat turpis ac, mollis justo. Integer sed velit consequat, maximus est at, interdum lectus. Donec bibendum orci ipsum, at pretium nisl euismod vel. Maecenas consequat magna a nibh vehicula, ac semper mauris elementum. In ac erat venenatis, aliquam nisl ut, ornare ante. Donec congue imperdiet risus, eu venenatis nunc laoreet sed.
-          </p>
-          <img src="assets/img/starsdark.png" alt="" class="testimonials-box-img">
-          <p class="testimonials-box-author">John Stephen</p>
-        </div>
+         <img src="assets/img/icons/sort-down.png" class="down-arrow">
        </div>
      </div>
-   </div> -->
+   </div>
    <footer class="main__footer wow fadeIn">
     <div class="right">
       <div class="right-text">
@@ -227,6 +210,29 @@
       </div>
     </div>
   </footer>
+  <script>
+    var url = "https://api.netlify.com/api/v1/sites/24114ced-c478-4905-b1de-d2699fb7dd16/submissions?access_token=cbfca10f28381201699e6d2ba0f35483c154c44b0f99f61924903aecd6f5fd32",
+        list = document.getElementsByClassName("testimonials-list")[0];
+    fetch(url)
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(res) {
+      res.forEach(function(el) {
+        if (el.form_name == "feedback") {
+          var testimonial = document.createElement("div");
+          testimonial.classList.add("testimonials-box");
+          testimonial.innerHTML = `<p class="testimonials-box-text">${el.data.descriere}</p>
+          <img src="assets/img/starsdark.png" alt="" class="testimonials-box-img">
+          <p class="testimonials-box-author">${el.data.nume}</p>`;
+          list.appendChild(testimonial);
+          if (list.scrollHeight >= 700) {
+            document.getElementsByClassName("down-arrow")[0].style.visibilty = "visible";
+          }
+        }
+      });
+    });
+  </script>
   <script src="js/menu-burger.js"></script>
 </body>
 </html>
