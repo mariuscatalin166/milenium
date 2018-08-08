@@ -170,6 +170,48 @@
       </div>
     </div>
   </div>
+  <div class="interactivity">
+    <div class="left">
+      <div class="interactivity-section">
+        <h2 class="interactivity-subtitle">Tip structura</h2>
+        <p class="interactivity-title">Selecteaza tipul structurii metalice</p>
+        <label for="grinda" id="label-grinda" class="interactivity-label-radio">Grinda cu zabrele
+          <div class="check">
+            <input type="radio" name="structure" id="grinda" checked="checked"/>
+            <div class="circle"></div>
+          </div>
+        </label>
+        <label for="euro" id="label-euro" class="interactivity-label-radio">Europrofile
+          <div class="check">
+            <input type="radio" name="structure" id="euro"/>
+            <div class="circle"></div>
+          </div>
+        </label>
+      </div>
+      <div class="interactivity-section">
+        <h2 class="interactivity-subtitle">Dimensiune hala</h2>
+        <p class="interactivity-title">Introduceti dimensiunile estimative ale constructiei.</p>
+        <div class="interactivity-section-wrapper2">
+          <div class="input-box">
+            <label for="deschidere" class="interactivity-label">Deschidere <span class="measure">m</span></label>
+            <input placeholder="Introduceti deschiderea" type="number" name="strcture" id="deschidere" onKeyDown="if (this.value.length >= 5) return false;" disabled="disabled"/>
+          </div>
+          <div class="input-box">
+            <label for="inaltime" class="interactivity-label">Inaltime <span class="measure">m</span></label>
+            <input placeholder="Introduceti inaltimea" type="number" name="strcture" id="inaltime" onKeyDown="if (this.value.length >= 5) return false;" disabled="disabled"/>
+          </div>
+          <div class="input-box">
+            <label for="lungime" class="interactivity-label">Lungime <span class="measure">m</span></label>
+            <input placeholder="Introduceti lungimea" type="number" name="strcture" id="lungime" onKeyDown="if (this.value.length >= 5) return false;" disabled="disabled"/>
+          </div>                 
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="interactivity-image"><span id="height"></span><span class="opening opening-first"></span><img src="http://www.halemetalicesv.ro/images/calculator-11.png" id="img-reprezentare1"/></div>
+      <div class="interactivity-image hidden"><span class="opening opening-second"></span><span id="width"></span><img src="" id="img-reprezentare2"/></div>
+    </div>
+  </div>
   <!-- <hr width="80%"  style="opacity: 0.4;"/> -->
   <div class="gallery">
     <div class="gallery-wrapper wow fadeIn">
@@ -191,15 +233,6 @@
     <figure class="gallery__figure">
       <img data-wow-delay="0.3s" class="wow fadeIn" src="assets/img/gallery/img24.jpg" alt="Imagine cu o hala metalica, hale metalice, hala, construita de Milenium Metcons.">
     </figure>
-    <!-- <figure class="gallery__figure">
-      <img src="assets/img/gallery/img16.jpg" alt="Imagine cu o hala metalica, hale metalice, hala, construita de Milenium Metcons.">
-    </figure>
-    <figure class="gallery__figure">
-      <img src="assets/img/gallery/img16.jpg" alt="Imagine cu o hala metalica, hale metalice, hala, construita de Milenium Metcons.">
-    </figure>
-    <figure class="gallery__figure">
-        <img src="assets/img/gallery/img16.jpg" alt="Imagine cu o hala metalica, hale metalice, hala, construita de Milenium Metcons.">
-    </figure> -->
   </div>
   <div class="contact wow fadeIn">
     <div class="contact-wrapper">
@@ -252,5 +285,6 @@
     </div>
   </footer>
   <script src="js/menu-burger.js"></script>
+  <script src="js/hala-interactivity.js"></script>
 </body>
 </html>
