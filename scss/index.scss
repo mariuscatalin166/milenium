@@ -49,26 +49,13 @@
       margin: 0 15px;
     }
   }
-  .about {
-    display: flex;
-    align-items: center;
-  }
-  .about__image {
-    width: 80%;
-  }
-  .about__text {
-    padding: 0 10px 0 10px;
-  }
   .gallery__images {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     img {
       max-width: 100%;
     }
     figure {
       display: inline-block;
-      width: 50%;
+      width: 75%;
     }
   }
   .footer-text{
@@ -91,10 +78,10 @@
     line-height: 50px;
   }
   .gallery__images {
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     figure {
-      width: 28%;
+      width: 30%;
     }
   }
   .about,
@@ -138,5 +125,17 @@
   }
   .info-title {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    * {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
   }
 }

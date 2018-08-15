@@ -1,5 +1,5 @@
 .gallery {
-  padding: 100px 30px 35px 30px;
+  padding: 60px 30px 35px 30px;
 }
 .gallery__title {
   font-family: Poppins, sans-serif;
@@ -15,10 +15,20 @@
   opacity: 0.8;
 }
 .gallery__images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
   text-align: center;
+  * {
+    margin: 2.5px;
+  }
+  figure {
+    width: 100%;
+  }
   // background: $dark_grey;
 }
 .gallery__button {
@@ -26,10 +36,7 @@
   border: 2px solid $dark_grey;
   font-weight: 600;
 }
-.gallery__figure {
-  margin: 10px;
-}
 .gallery__images img {
   width: 100%;
-  // box-shadow: 2px 2px 20px rgba($black, 0.5);
+  box-shadow: 3px 3px 15px rgba($black, 0.2);
 }
