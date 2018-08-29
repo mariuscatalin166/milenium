@@ -93,7 +93,7 @@
       <div class="menu__element"><a href="/tuburi.html" >Tuburi</a></div>
     </div>  
   <div class="main wow fadeIn">
-    <div class="left wow slideInLeft">
+    <div class="left">
       <div class="main-text">
         <h1 class="main-title">Contacteaza-ne</h1>
         <div class="divider"></div>
@@ -122,59 +122,62 @@
       </div>
     </div>
   </div>
-  <div class="form-section wow slideInRight">
+  <div class="form-section wow fadeIn">
+    <h1 style="margin-bottom: 25px;" class="main-title">Sau lasa-ne un mesaj</h1>
     <form id="contact" name="contact" netlify>
-      <div class="right">
         <div class="interactivity">
-          <div class="left">
-            <div class="interactivity-section">
-              <h2 class="interactivity-subtitle">Tip structura</h2>
-              <p class="interactivity-title">Selecteaza tipul structurii metalice</p>
-              <label for="grinda" id="label-grinda" class="interactivity-label-radio">Grinda cu zabrele
-                <div class="check">
-                  <input type="radio" name="structure" id="grinda" checked="checked" value="Grinda cu zabrele"/>
-                  <div class="circle"></div>
+          <div>
+            <div class="flexHere">
+              <div class="left">
+                <div class="interactivity-section">
+                  <h2 class="interactivity-subtitle">Tip structura</h2>
+                  <p class="interactivity-title">Selecteaza tipul structurii metalice</p>
+                  <label for="grinda" id="label-grinda" class="interactivity-label-radio">Grinda cu zabrele
+                    <div class="check">
+                      <input type="radio" name="structure" id="grinda" checked="checked" value="Grinda cu zabrele"/>
+                      <div class="circle"></div>
+                    </div>
+                  </label>
+                  <label for="euro" id="label-euro" class="interactivity-label-radio" value="Europrofile">Europrofile
+                    <div class="check">
+                      <input type="radio" name="structure" id="euro"/>
+                      <div class="circle"></div>
+                    </div>
+                  </label>
                 </div>
-              </label>
-              <label for="euro" id="label-euro" class="interactivity-label-radio" value="Europrofile">Europrofile
-                <div class="check">
-                  <input type="radio" name="structure" id="euro"/>
-                  <div class="circle"></div>
+                <div class="interactivity-section">
+                  <h2 class="interactivity-subtitle">Dimensiune hala</h2>
+                  <p class="interactivity-title">Introduceti dimensiunile estimative ale constructiei.</p>
+                  <div class="interactivity-section-wrapper2">
+                    <div class="input-box">
+                      <label for="deschidere" class="interactivity-label">Deschidere <span class="measure">m</span></label>
+                      <input placeholder="Introduceti deschiderea" type="number" name="strcture" id="deschidere" onKeyDown="if (this.value.length >= 5) return false;"/>
+                    </div>
+                    <div class="input-box">
+                      <label for="inaltime" class="interactivity-label">Inaltime <span class="measure">m</span></label>
+                      <input placeholder="Introduceti inaltimea" type="number" name="strcture" id="inaltime" onKeyDown="if (this.value.length >= 5) return false;" disabled="disabled"/>
+                    </div>
+                    <div class="input-box">
+                      <label for="lungime" class="interactivity-label">Lungime <span class="measure">m</span></label>
+                      <input placeholder="Introduceti lungimea" type="number" name="strcture" id="lungime" onKeyDown="if (this.value.length >= 5) return false;" disabled="disabled"/>
+                    </div>                 
+                  </div>
                 </div>
-              </label>
-            </div>
-            <div class="interactivity-section">
-              <h2 class="interactivity-subtitle">Dimensiune hala</h2>
-              <p class="interactivity-title">Introduceti dimensiunile estimative ale constructiei.</p>
-              <div class="interactivity-section-wrapper2">
-                <div class="input-box">
-                  <label for="deschidere" class="interactivity-label">Deschidere <span class="measure">m</span></label>
-                  <input placeholder="Introduceti deschiderea" type="number" name="strcture" id="deschidere" onKeyDown="if (this.value.length >= 5) return false;" disabled="disabled"/>
-                </div>
-                <div class="input-box">
-                  <label for="inaltime" class="interactivity-label">Inaltime <span class="measure">m</span></label>
-                  <input placeholder="Introduceti inaltimea" type="number" name="strcture" id="inaltime" onKeyDown="if (this.value.length >= 5) return false;" disabled="disabled"/>
-                </div>
-                <div class="input-box">
-                  <label for="lungime" class="interactivity-label">Lungime <span class="measure">m</span></label>
-                  <input placeholder="Introduceti lungimea" type="number" name="strcture" id="lungime" onKeyDown="if (this.value.length >= 5) return false;" disabled="disabled"/>
-                </div>                 
+              </div>
+              <div class="right">
+                <div class="interactivity-image"><span id="height"></span><span class="opening opening-first"></span><img src="http://www.halemetalicesv.ro/images/calculator-11.png" id="img-reprezentare1"/></div>
+                <div class="interactivity-image"><span class="opening opening-second"></span><span id="width"></span><img src="assets/img/hala3d.png" id="img-reprezentare2"/></div>
               </div>
             </div>
-          </div>
-          <div class="right">
-            <div class="interactivity-image"><span id="height"></span><span class="opening opening-first"></span><img src="http://www.halemetalicesv.ro/images/calculator-11.png" id="img-reprezentare1"/></div>
-            <div class="interactivity-image hidden"><span class="opening opening-second"></span><span id="width"></span><img src="" id="img-reprezentare2"/></div>
+            <div>
+              <input class="contact-input" type="text" name="name" placeholder="Nume" required>
+              <input class="contact-input" type="email" name="email" placeholder="Email" required>
+              <input class="contact-input" type="text" name="subiect" placeholder="Subiect" required>
+              <textarea class="contact-textarea" name="text" cols="30" rows="10" placeholder="Mesajul tau" required></textarea>
+              <button class="contact-submit">Trimite mesajul</button>
+            </div>
           </div>
         </div>            
-      </div>
-      <div class="left">
-        <input class="contact-input" type="text" name="name" placeholder="Nume" required>
-        <input class="contact-input" type="email" name="email" placeholder="Email" required>
-        <input class="contact-input" type="text" name="subiect" placeholder="Subiect" required>
-        <textarea class="contact-textarea" name="text" cols="30" rows="10" placeholder="Mesajul tau" required></textarea>
-        <button class="contact-submit">Trimite mesajul</button>
-      </div>
     </form>
   </div>
   <footer class="main__footer wow fadeIn">
@@ -210,7 +213,9 @@
         counter"></a></div></noscript>
         <!-- End of Statcounter Code -->
         <div class="footer-text">
-        <div class="footer__info">Toate produsele noastre au testarile si autorizatiile necesare pentru cele mai exigente standarde in constructii.</div>
+        <div class="footer__info">Toate produsele noastre au testarile si autorizatiile necesare pentru cele mai exigente standarde in constructii.
+            <p class="credit">Site facut de <a href="https://razvanel.pw" target="_blank">Razvan</a></p>
+        </div>
         <span class="divider divider-gold divider-margin"></span>
       </div>
       <div class="footer__socials">

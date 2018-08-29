@@ -12,11 +12,9 @@ spanOpeningImg = Array.from(spanOpeningImg);
 
 labelGrinda.addEventListener("click", function() {
 	imgReprezentare1.src = "http://www.halemetalicesv.ro/images/calculator-11.png";
-	inputOpeningImg.disabled = false;
 });
 labelEuro.addEventListener("click", function() {
 	imgReprezentare1.src = "http://www.halemetalicesv.ro/images/calculator-12.png";
-	inputOpeningImg.disabled = false;
 });
 inputOpeningImg.addEventListener("input", function() {
 	spanOpeningImg.forEach(function(el) {
@@ -30,6 +28,6 @@ inputHeightImg.addEventListener("input", function() {
 });
 inputWidthImg.addEventListener("input", function() {
 	spanWidthImg.innerText = this.value + " m";
-	imgReprezentare2.src = "http://www.halemetalicesv.ro/images/calculator-13.png";
-	this.value != "" ? document.getElementsByClassName("image")[1].classList.remove("hidden") : document.getElementsByClassName("image")[1].classList.add("hidden");
+	imgReprezentare2.src = "assets/img/hala3d.png";
+	this.value != "" ? document.getElementsByClassName("interactivity-image")[1].classList.remove("hidden") : document.getElementsByClassName("interactivity-image")[1].classList.add("hidden");
 });
