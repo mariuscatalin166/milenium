@@ -11,10 +11,10 @@ var labelGrinda = document.getElementById("label-grinda"),
 spanOpeningImg = Array.from(spanOpeningImg);
 
 labelGrinda.addEventListener("click", function() {
-	imgReprezentare1.src = "http://www.halemetalicesv.ro/images/calculator-11.png";
+	imgReprezentare1.src = "assets/img/hala2d1.png";
 });
 labelEuro.addEventListener("click", function() {
-	imgReprezentare1.src = "http://www.halemetalicesv.ro/images/calculator-12.png";
+	imgReprezentare1.src = "assets/img/hala2d2.png";
 });
 inputOpeningImg.addEventListener("input", function() {
 	spanOpeningImg.forEach(function(el) {
