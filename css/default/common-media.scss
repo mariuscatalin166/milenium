@@ -1,3 +1,8 @@
+::selection {
+  background: $dark_grey;
+  color: $white;
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-links {
     display: block;
@@ -69,4 +74,11 @@ body {
   width: 50px;
   display: block;
   background: white;
+}
+.credit {
+  margin-top: 10px;
+  font-size: 12px;
+  a {
+    color: white;
+  }
 }
