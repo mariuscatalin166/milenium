@@ -1,0 +1,23 @@
+{
+  "name": "milenium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.26.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razvanlikespizza/milenium.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razvanlikespizza/milenium/issues"
+  },
+  "homepage": "https://github.com/razvanlikespizza/milenium#readme"
+}

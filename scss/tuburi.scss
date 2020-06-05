@@ -182,11 +182,11 @@ strong {
   .usesanddimensions {
     flex-direction: row;
   }
-  .left,
-  .right {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
+  // .left,
+  // .right {
+  //   flex-grow: 1;
+  //   flex-basis: 0;
+  // }
   .info {
     padding: 50px;
   }
