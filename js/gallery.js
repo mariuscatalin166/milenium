@@ -5,6 +5,7 @@ var url = "../img.json",
 
 fetch(url)
 .then(function(res) {
+  console.log(res);
   return res.json();
 })
 .then(function(res) {
