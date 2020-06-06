@@ -1,7 +1,8 @@
 // MAIN BACKGROUND
 .main {
   width: 100%;
-  background: radial-gradient(rgba($dark_gold, 0.1), rgba(#262626, 1)), url(../assets/img/mainoverlay.png), url(../assets/img/gallery/img37.jpeg);
+  // background: radial-gradient(rgba($dark_gold, 0.1), rgba(#262626, 0.1)), url(../assets/img/mainoverlay.png), url(../assets/img/gallery/img37.jpeg);
+  background: radial-gradient(rgba($black, 0.6),rgba($dark_gold, 0.1)), url(../assets/img/mainoverlay.png), url(../assets/img/gallery/img37.jpeg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
